@@ -28,7 +28,7 @@ const InfoCard: React.FC = () => {
     
     return ( 
         <>
-        <div className="p-10 px-20">
+        <div className="lg:mt-60 mt-40 p-10 px-20">
             <div className="flex">
                 <div className="p-5">
                 <Image src={"/calendar.png"} width={40} height={40} alt={"Icon"}/>

@@ -23,39 +23,39 @@ import Image from "next/image"
 
 const components: { title: string; href: string; description: string }[] = [
   {
-    title: "Alert Dialog",
+    title: "Founding Principles",
     href: "/docs/primitives/alert-dialog",
     description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
+      "Our journey started with a commitment to curate unique and meaningful experiences that go beyond the ordinary.",
   },
   {
-    title: "Hover Card",
+    title: "Exceptional Service",
     href: "/docs/primitives/hover-card",
     description:
-      "For sighted users to preview content available behind a link.",
+      "Central to our story is the unwavering commitment to providing exceptional service.",
   },
   {
-    title: "Progress",
+    title: "Global Inspiration, Local Expertise",
     href: "/docs/primitives/progress",
     description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+      "Drawing inspiration from the diversity of cultures around the world",
   },
   {
-    title: "Scroll-area",
+    title: "Sustainable Travel",
     href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
+    description: "As stewards of the planet, we are dedicated to promoting sustainable travel practices.",
   },
   {
-    title: "Tabs",
+    title: "Innovation and Adaptability",
     href: "/docs/primitives/tabs",
     description:
-      "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+      "Our story is one of continuous innovation and adaptability. In a rapidly changing world.",
   },
   {
-    title: "Tooltip",
+    title: "Community Engagement",
     href: "/docs/primitives/tooltip",
     description:
-      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+      "Through philanthropic initiatives and community engagement",
   },
 ]
 
@@ -77,7 +77,7 @@ const Heading: React.FC = () => {
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
+          <NavigationMenuTrigger>Benefits</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-3">
@@ -88,29 +88,28 @@ const Heading: React.FC = () => {
                   >
                     {/* <Icons.logo className="h-6 w-6" /> */}
                     <div className="mb-2 mt-4 text-lg font-medium">
-                      shadcn/ui
+                    Unwind with Our Exclusive Holiday Benefits
                     </div>
                     <p className="text-sm leading-tight text-muted-foreground">
-                      Beautifully designed components built with Radix UI and
-                      Tailwind CSS.
+                    Embark on a journey of relaxation and joy with our unparalleled holiday benefits designed exclusively for you.
                     </p>
                   </a>
                 </NavigationMenuLink>
               </li>
-              <ListItem href="/docs" title="Introduction">
-                Re-usable components built using Radix UI and Tailwind CSS.
+              <ListItem href="/docs" title="Tailored Vacation Packages">
+              Enjoy the flexibility of choosing from a variety of tailored vacation packages, each crafted to cater to different preferences and travel styles.
               </ListItem>
-              <ListItem href="/docs/installation" title="Installation">
-                How to install dependencies and structure your app.
+              <ListItem href="/docs/installation" title="Exclusive Discounts and Offers">
+              As a valued member of our holiday community, you&apos;ll have access to exclusive discounts and special offers on accommodations, flights, and various activities.
               </ListItem>
-              <ListItem href="/docs/primitives/typography" title="Typography">
-                Styles for headings, paragraphs, lists...etc
+              <ListItem href="/docs/primitives/typography" title="Personalized Travel Assistance">
+              Our dedicated team of travel experts is committed to providing you with personalized assistance throughout your journey.
               </ListItem>
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Components</NavigationMenuTrigger>
+          <NavigationMenuTrigger>About</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {components.map((component) => (
@@ -128,7 +127,7 @@ const Heading: React.FC = () => {
         <NavigationMenuItem>
           <Link href="/docs" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Documentation
+              Info
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
@@ -158,94 +157,7 @@ const Heading: React.FC = () => {
 
     {/* <div className="flex">Hey there, <div className="font-bold">going anywhere?</div></div> */}
     <div className="flex text-5xl text-white">Hey there, <div className="font-bold">going anywhere?</div></div>
-
-    <div className="w-full px-60 lg:px-96 ">
-    <div className="relative mx-auto my-10 max-w-md">
-  <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-    {/* Gunakan ikon dari shadcn */}
-    <Search className="h-5 w-5 text-gray-400" />
-
-    {/* atau gunakan ikon dari lucide */}
-    {/* <MagnifyingGlass className="h-5 w-5 text-gray-400" /> */}
-  </div>
-  <input
-    type="text"
-    className="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md leading-5 shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-    placeholder="Search"
-  />
-</div>
-    </div>
-
-
-{/* ICON */}
-<div className="flex space-x-10">
-
-<div className="flex flex-col items-center justify-center">
-  <div className="border-white border-2 p-1 rounded-full hover:border-gray-800">
-    <Image
-      src="/flight.png"
-      alt="wasd"
-      width={48} // Adjust the width as needed
-      height={48} // Adjust the height as needed
-      className="rounded-full"
-    />
-  </div>
-  <p className="font-bold text-white">Flights</p>
-</div>
-
-<div className="flex flex-col items-center justify-center">
-  <div className="border-white border-2 p-1 rounded-full hover:border-gray-800">
-    <Image
-      src="/hotel.png"
-      alt="wasd"
-      width={48} // Adjust the width as needed
-      height={48} // Adjust the height as needed
-      className="rounded-full"
-    />
-  </div>
-  <p className="font-bold text-white">Hotels</p>
-</div>
-
-<div className="flex flex-col items-center justify-center">
-  <div className="border-white border-2 p-1 rounded-full hover:border-gray-800">
-    <Image
-      src="/todos.png"
-      alt="wasd"
-      width={48} // Adjust the width as needed
-      height={48} // Adjust the height as needed
-      className="rounded-full"
-    />
-  </div>
-  <p className="font-bold text-white">To Dos</p>
-</div>
-
-<div className="flex flex-col items-center justify-center">
-  <div className="border-white border-2 p-1 rounded-full hover:border-gray-800">
-    <Image
-      src="/train.png"
-      alt="wasd"
-      width={48} // Adjust the width as needed
-      height={48} // Adjust the height as needed
-      className="rounded-full"
-    />
-  </div>
-  <p className="font-bold text-white">Trains</p>
-</div>
-
-<div className="flex flex-col items-center justify-center">
-  <div className="border-white border-2 p-1 rounded-full hover:border-gray-800">
-    <Image
-      src="/ticket.png"
-      alt="wasd"
-      width={48} // Adjust the width as needed
-      height={48} // Adjust the height as needed
-      className="rounded-full"
-    />
-  </div>
-  <p className="font-bold text-white">Events</p>
-</div>
-
-</div>
+    <div className="text-white text-xl p-5">Embark on Unforgettable Journeys</div>
 
     </div>
 

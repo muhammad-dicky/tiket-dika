@@ -72,7 +72,7 @@ export const MidCard: React.FC = () => {
     return (
         <>
 
-            <Row className='mt-20 '>
+            <Row className='mt-40 '>
                 <Col span={2}></Col>
                 <Col span={9}>
                     <Carousel autoplay>

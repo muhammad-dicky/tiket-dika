@@ -16,7 +16,7 @@ const { Title, Text } = Typography;
 
 export const CardImageTitle = () => {
     return (
-        <Row className='mt-20'>
+        <Row className='mt-40'>
             <Col span={2} lg={4} ></Col>
             <Col span={12} md={11} lg={8}>
                 <p>Best location</p>
@@ -50,7 +50,7 @@ export const CardImageTitleDestination = () => {
 
 export const CardImage = () => {
     return (
-        <div className="container mx-auto px-5 py-0 lg:px-32 lg:pt-24">
+        <div className=" container mx-auto px-5 py-0 lg:px-32 lg:pt-24">
             <div className="-m-1 flex flex-wrap md:-m-2">
                 <div className="flex w-1/2 flex-wrap">
                     <CardImageSmall imageUrl='/card1.jpg' />
