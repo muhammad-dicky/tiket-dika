@@ -42,17 +42,7 @@ const InfoCard: React.FC = () => {
             {/* <CardOurDestination/> */}
             <Carousel/>
 
-         {/* BATAS ATAS */}
-
-         
-
-
-
-         {/* BATAS BAWAH */}
-
-
-
-
+    
         </div>
         </>
      );
