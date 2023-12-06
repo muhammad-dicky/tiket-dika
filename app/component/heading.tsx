@@ -68,7 +68,7 @@ const Heading: React.FC = () => {
     <div className="relative h-screen" style={{backgroundImage: "url('/bg.jpg')"}}>
 
     <div className="flex items-center justify-between p-4 lg:px-20" >
-    <div className="flex font-bold text-white">tiket <Circle color="yellow"/> com</div>
+    <div className="flex font-bold text-white">Travel <Circle color="yellow"/> fun</div>
 
 
     <div className="flex ">
@@ -146,7 +146,7 @@ const Heading: React.FC = () => {
 
     </div>
 
-    <div>
+    <div className="" style={{visibility:'hidden'}}>
       <Button>Download Now!</Button>
     </div>
 
@@ -158,7 +158,9 @@ const Heading: React.FC = () => {
     {/* <div className="flex">Hey there, <div className="font-bold">going anywhere?</div></div> */}
     <div className="flex text-5xl text-white">Hey there, <div className="font-bold">going anywhere?</div></div>
     <div className="text-white text-xl p-5">Embark on Unforgettable Journeys</div>
-
+    <div className="" >
+      <Button>Download Our App!</Button>
+    </div>
     </div>
 
 

@@ -6,11 +6,11 @@ import { Footer } from './component/Footer'
 import InfoCard from './component/InfoCard'
 import SmoothTrip from './component/SmoothTrip'
 import SmoothTripInfo from './component/SmoothTripInfo'
+import About from './component/About'
 
 export default function Home() {
   return (
     <>
-
     
     <CardImageTitle/>
     <CardImage/>
@@ -18,6 +18,7 @@ export default function Home() {
 
     <MidCard/>
 
+    <About/>
 
     <InfoCard/>
     <SmoothTrip/>
