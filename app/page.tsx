@@ -7,10 +7,15 @@ import InfoCard from './component/InfoCard'
 import SmoothTrip from './component/SmoothTrip'
 import SmoothTripInfo from './component/SmoothTripInfo'
 import About from './component/About'
+import FloatingActionButton from './component/FloatingActionButton'
 
 export default function Home() {
   return (
     <>
+
+    
+
+    <FloatingActionButton/>
     
     <CardImageTitle/>
     <CardImage/>
