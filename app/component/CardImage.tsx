@@ -51,19 +51,23 @@ export const CardImageTitleDestination = () => {
 export const CardImage = () => {
     return (
         <div className=" container mx-auto px-5 py-0 lg:px-32 lg:pt-24">
-            <div className="-m-1 flex flex-wrap md:-m-2">
-                <div className="flex w-1/2 flex-wrap">
-                    <CardImageSmall imageUrl='/card1.jpg' />
-                    <CardImageSmall imageUrl='/card2.jpg' />
 
-                    <CardImageBig imageUrl='/card3.jpg' title='Bromo, East Java' description='Bromo Tengger Tour' />
-                </div>
-                <div className="flex w-1/2 flex-wrap">
-                    <CardImageBig imageUrl='/card4.jpg' title='Uluwatu, Bali' description='Bali Beach Tourism' />
-                    <CardImageSmall imageUrl='/card5.jpg' />
-                    <CardImageSmall imageUrl='/card6.jpg' />
-                </div>
-            </div>
+          
+
+
+  <div className="-m-1 flex flex-wrap md:-m-2">
+    <div className="flex w-full md:w-1/2  flex-wrap">
+      <CardImageSmall imageUrl='/card1.jpg' />
+      <CardImageSmall imageUrl='/card2.jpg' />
+      <CardImageBig imageUrl='/card3.jpg' title='Bromo, East Java' description='Bromo Tengger Tour' />
+    </div>
+    <div className="flex w-full md:w-1/2  flex-wrap">
+      <CardImageBig imageUrl='/card4.jpg' title='Uluwatu, Bali' description='Bali Beach Tourism' />
+      <CardImageSmall imageUrl='/card5.jpg' />
+      <CardImageSmall imageUrl='/card6.jpg' />
+    </div>
+  </div>
+
         </div>
     )
 }

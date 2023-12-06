@@ -21,7 +21,7 @@ const App: React.FC = () =>{
   const [count, setCount] = useState(0)
   return (
     <>
-    <div className="container md:px-32 lg:px-40">
+    <div className="md:container md:px-8 lg:px-12">
       <Swiper
         effect={'coverflow'}
         grabCursor={true}

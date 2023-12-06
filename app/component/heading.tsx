@@ -261,7 +261,7 @@ const Heading: React.FC = () => {
     </div>
 
 
-    <div className="flex flex-col items-center justify-center pt-40 md:pt-60">
+    <div className="flex flex-col items-center justify-center pt-60 md:pt-60">
   <div className="text-3xl md:text-5xl text-white text-center">
     Hey there, <span className="font-bold">going anywhere?</span>
   </div>
