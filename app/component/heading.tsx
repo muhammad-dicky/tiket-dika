@@ -25,6 +25,7 @@ import { Disclosure } from '@headlessui/react';
 import { Fragment } from 'react';
 import { Sheet, SheetClose, SheetContent, SheetDescription, SheetFooter, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
 import { Label } from "@/components/ui/label"
+import Iphone from "../../public/iPhone.png"
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -71,15 +72,17 @@ const components: { title: string; href: string; description: string }[] = [
 const Heading: React.FC = () => {
   return (
     <>
-    <div className="relative h-screen" style={{backgroundImage: "url('/bg.jpg')"}}>
+    <div className="relative h-auto pb-40" style={{backgroundImage: "url('/bg.jpg')"}}>
 
     <div className="flex items-center justify-between p-4 lg:px-20" >
-    <div className="flex font-bold text-white">Travel <Circle color="yellow"/> fun</div>
+    <div className="flex font-bold text-white">
+      <Image src={"/logotravel.png"} width={150} height={40} alt={"Travelfun"}/>
+      </div>
 
 
     <div className="flex ">
     
-    <div className="hidden md:block">
+    <div className="hidden md:block mx-40">
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
@@ -167,13 +170,13 @@ const Heading: React.FC = () => {
 
 
 
-    {/* <div className="md:hidden" >
+    {/* <div className="md:hidden" style={{visibility:"hidden"}}>
       <Menu/>
     </div> */}
 
 
 
-{/* testing atas */}
+{/* MOBILE VER */}
 <div className="md:hidden">
 <Sheet>
       <SheetTrigger asChild>
@@ -261,17 +264,45 @@ const Heading: React.FC = () => {
     </div>
 
 
-    <div className="flex flex-col items-center justify-center pt-60 md:pt-60">
-  <div className="text-3xl md:text-5xl text-white text-center">
-    Hey there, <span className="font-bold">going anywhere?</span>
-  </div>
-  <div className="text-white text-lg md:text-xl p-5 text-center">
-    Embark on Unforgettable Journeys
-  </div>
-  <div className="text-center">
-    <Button>Download Our App!</Button>
-  </div>
+    <div className="flex justify-evenly pt-10">
+
+<div className="flex items-center pl-40 hidden md:block">
+  <Image src={Iphone}  alt={"wasd"} className="max-w-full" />
 </div>
+
+<div className="flex flex-col justify-center pt-12 lg:px-32 md:pt-12">
+  <div className="text-3xl md:text-5xl text-white">
+    Welcome to <span className="font-bold">TravelFun</span>!
+  </div>
+  <div className="text-white text-lg md:text-xl p-5 font-bold">
+    Explore the World with Excitement and Ease
+  </div>
+  <div className="text-white text-md md:text-lg font-bold">
+    Discover enchanting destinations, indulge in unique experiences, and create lasting memories with TravelFun. Whether you seek thrilling adventures or serene getaways, we&apos;ve got your journey covered.
+  </div>
+
+  <div className="flex  my-10">
+                <div className="bg-black text-white flex items-center border w-auto rounded-lg px-4 py-2 w-52 mx-2">
+                    <img src="https://cdn-icons-png.flaticon.com/512/888/888857.png" className="w-7 md:w-8"/>
+                    <div className="text-left ml-3">
+                        <p className='text-xs text-gray-200'>Download on </p>
+                        <p className="text-sm md:text-base"> Google Play Store </p>
+                    </div>
+                </div>
+                <div className="bg-black text-white flex items-center border w-auto rounded-lg px-4 py-2 w-44 mx-2">
+                    <img src="https://cdn-icons-png.flaticon.com/512/888/888841.png" className="w-7 md:w-8"/>
+                    <div className="text-left ml-3">
+                        <p className='text-xs text-gray-200'>Download on </p>
+                        <p className="text-sm md:text-base"> Apple Store </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+</div>
+</div>
+
 
 
 
