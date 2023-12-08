@@ -105,12 +105,12 @@ export const MidCard: React.FC = () => {
                     <p className='md:hidden font-bold'>One click for you</p>
                     <p className='font-bold text-5xl'>One click for you</p>
                     {cardContent.map((content, index) => (
-                        <Card key={index} className='m-3 dark:border-white border-gray-950' hoverable style={cardStyle}>
-                            <div className='dark:text-white '>
+                        <Card key={index} className='m-3  border-gray-950' hoverable >
+                            <div className='text-black '>
                             {content.icon}
                             </div>
-                            <p className='font-bold dark:text-white'>{content.title} </p>
-                            <p className='hidden md:block dark:text-white' style={{ fontSize: '14px' }}>{content.description}</p>
+                            <p className='font-bold text-black'>{content.title} </p>
+                            <p className='hidden md:block text-black' style={{ fontSize: '14px' }}>{content.description}</p>
                         </Card>
                     ))}
                     </div>
