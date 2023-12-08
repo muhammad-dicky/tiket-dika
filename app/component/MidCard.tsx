@@ -69,10 +69,13 @@ export const MidCard: React.FC = () => {
         }
     ]
 
+
+
+
     return (
         <>
 
-            <Row className='mt-40 '>
+            <Row className='mt-40'>
                 <Col span={2}></Col>
                 <Col span={9}>
                     <Carousel autoplay>
@@ -94,16 +97,18 @@ export const MidCard: React.FC = () => {
 
 
 
-                <Col span={10} className='ml-7 dark:text-white'>
+                <Col span={10} className='ml-7'>
                     <p>How it works</p>
-                    <div className='dark:text-white'>
+                    <div className=''>
 
                     
                     <p className='md:hidden font-bold'>One click for you</p>
                     <p className='font-bold text-5xl'>One click for you</p>
                     {cardContent.map((content, index) => (
-                        <Card key={index} className='mb-3' hoverable bordered={false} style={cardStyle}>
+                        <Card key={index} className='m-3 dark:border-white border-gray-950' hoverable style={cardStyle}>
+                            <div className='dark:text-white '>
                             {content.icon}
+                            </div>
                             <p className='font-bold dark:text-white'>{content.title} </p>
                             <p className='hidden md:block dark:text-white' style={{ fontSize: '14px' }}>{content.description}</p>
                         </Card>
