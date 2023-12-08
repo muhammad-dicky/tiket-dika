@@ -1,36 +1,68 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Deskripsi Proyek
 
-First, run the development server:
+**Nama Proyek:** TravelFun
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**Tujuan:** Membangun halaman landing untuk mempromosikan aplikasi TravelFun. Halaman ini berisi tombol aksi untuk mengunduh aplikasi.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Teknologi yang Digunakan
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Next.js:** 
+   - **Penggunaan:** Next.js digunakan sebagai framework React untuk membangun aplikasi web yang responsif dan cepat.
+   - **Kelebihan:**
+     - *Server-side Rendering (SSR):* Memungkinkan rendering sisi server untuk meningkatkan kecepatan dan SEO.
+     - *Hot Module Replacement (HMR):* Memungkinkan pengembangan tanpa perlu me-refresh halaman.
+     - *Routing Terintegrasi:* Sistem routing yang mudah dan intuitif.
+     - *Ekosistem React:* Dengan menggunakan React, pengembang dapat memanfaatkan komponen-komponen yang powerful.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+2. **Tailwind CSS:**
+   - **Penggunaan:** Tailwind digunakan untuk styling dengan pendekatan utility-first, memudahkan pengembangan dan pemeliharaan.
+   - **Kelebihan:**
+     - *Customization:* Mudah disesuaikan sesuai kebutuhan proyek.
+     - *Rapid Development:* Mempercepat proses styling dengan menggunakan kelas-kelas yang sudah ada.
+     - *Ringan:* Hanya menghasilkan kode CSS yang digunakan, mengurangi ukuran total.
 
-## Learn More
+3. **Shadcn-UI:**
+   - **Penggunaan:** Shadcn-UI adalah komponen UI yang digunakan untuk mempercantik antarmuka pengguna.
+   - **Kelebihan:**
+     - *Desain Modern:* Menawarkan komponen-komponen dengan desain modern dan responsif.
+     - *Customizable:* Komponen-komponen dapat disesuaikan dengan kebutuhan proyek.
 
-To learn more about Next.js, take a look at the following resources:
+## Cara Menjalankan Proyek
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Catatan:** Pastikan Anda memiliki Node.js dan npm terinstal di komputer Anda sebelum menjalankan proyek ini. Anda juga dapat mengganti [nama-pengguna] dengan nama pengguna GitHub Anda saat melakukan cloning.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. Clone repositori ke komputer lokal:
+   ```
+   git clone https://github.com/muhammad-dicky/tiket-dika.git
+   ```
 
-## Deploy on Vercel
+2. Pindah ke direktori proyek:
+   ```
+   cd travelfun
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. Install dependensi:
+   ```
+   npm install
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+4. Jalankan proyek secara lokal:
+   ```
+   npm run dev
+   ```
+
+5. Buka browser dan akses [http://localhost:3000](http://localhost:3000)
+
+## Kontribusi
+
+Kami terbuka untuk kontribusi! Jika Anda ingin berkontribusi pada proyek ini, silakan buat *pull request* dan kami akan dengan senang hati mempertimbangkan.
+
+## Lisensi
+
+Proyek ini dilisensikan di bawah Lisensi MIT - lihat file [LICENSE](LICENSE) untuk informasi lebih lanjut.
+
+---
+
+
