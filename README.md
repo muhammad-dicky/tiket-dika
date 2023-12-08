@@ -35,7 +35,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 1. Clone repositori ke komputer lokal:
    ```
-   git clone https://github.com/nama-pengguna/travelfun.git
+   git clone https://github.com/muhammad-dicky/tiket-dika.git
    ```
 
 2. Pindah ke direktori proyek:
