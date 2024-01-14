@@ -18,11 +18,13 @@ export default function Home() {
     <FloatingActionButton/>
 
 
-    
+    {/* INDONESIAN TOURISM */}
     <CardImageTitle/>
-    <CardImage/>
-    {/* <CardImageTitleDestination/> */}
 
+    
+    <CardImage/>
+
+    {/* One Click For You */}
     <MidCard/>
 
     <About/>
