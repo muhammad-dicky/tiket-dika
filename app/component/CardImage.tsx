@@ -15,21 +15,6 @@ const { Title, Text } = Typography;
 export const CardImageTitle = () => {
   return (
     <>
-      {/* <Row className="mt-40 ">
-        <Col span={2} lg={2}></Col>
-        <Col span={12} md={11} lg={8}>
-          <p className="text-3xl">Best location</p>
-          <h1 className="text-4xl font-bold dark:text-white">
-            Indonesian tourism
-          </h1>
-        </Col>
-        <Col className="text-2xl ml-40 " span={8} md={9} lg={8}>
-          Extraordinary natural beauty, enjoy the rich culture, and experience
-          the friendliness of the local people.
-        </Col>
-        <Col span={4} lg={2}></Col>
-      </Row> */}
-
       <div className="py-20 flex-row md:flex space-y-5 justify-between text-center md:text-left mx-40">
         <div className="flex-1">
           <p className="text-3xl ">Best location</p>
@@ -45,20 +30,6 @@ export const CardImageTitle = () => {
           </h1>
         </div>
       </div>
-      {/* <Row className="mt-40">
-        <Col span={2} lg={4}></Col>
-        <Col span={12} md={11} lg={8}>
-          <p className="text-3xl">Best location</p>
-          <h1 className="text-4xl font-bold dark:text-white">
-            Indonesian tourism
-          </h1>
-        </Col>
-        <Col className="text-2xl ml-1 " span={8} md={9} lg={8}>
-          Extraordinary natural beauty, enjoy the rich culture, and experience
-          the friendliness of the local people.
-        </Col>
-        <Col span={4}></Col>
-      </Row> */}
     </>
   );
 };
