@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className=" bg-gradient-to-r from-blue-500 to-blue-700 text-white py-10 my-24 flex-row md:flex  items-center"
+      className=" bg-gradient-to-r from-blue-500 to-blue-700 text-white py-10 my-10 flex-row md:flex  items-center"
     >
       <div className="flex-1">
         <img src="/logotravel.png" alt="" />

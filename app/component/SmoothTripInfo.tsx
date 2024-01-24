@@ -9,12 +9,12 @@ export default function SmoothTripInfo() {
     <>
       <div
         id="info"
-        className="p-10 flex flex-col md:flex-row md:justify-evenly"
+        className="p-10 flex items-center flex-col md:flex-row md:justify-evenly"
       >
-        <div className="mb-8 md:mb-0 md:mr-8">
-          <Image className="w-full md:w-96" src={Kiri} alt={"wasd"} />
+        <div className=" md:mb-0 md:mr-8 ">
+          <Image className="w-80 pr-10 md:w-96 " src={Kiri} alt={"wasd"} />
         </div>
-        <div className="flex flex-col space-y-5">
+        <div className="flex flex-col space-y-5 text-center">
           <div className="text-3xl font-bold">
             Book Tickets and Plan Your Holiday with Ease
           </div>
@@ -35,8 +35,13 @@ export default function SmoothTripInfo() {
           </div>
         </div>
       </div>
-
-      <div className="p-10 flex flex-col-reverse items-center md:flex-row md:justify-evenly">
+      <div
+        id="info"
+        className="p-10 flex items-center flex-col md:flex-row md:justify-evenly"
+      >
+        <div className=" md:mb-0 md:mr-8 ">
+          <Image className="w-80 pr-10 md:w-96 " src={Kanan} alt={"wasd"} />
+        </div>
         <div className="flex flex-col space-y-5 text-center md:text-left">
           <div className="text-3xl font-bold">
             Plenty of Promo and Benefits, Save Even More!
@@ -58,17 +63,15 @@ export default function SmoothTripInfo() {
             with discounts.
           </div>
         </div>
-
-        <div className="mr-20 mb-8 md:mb-0 md:mr-8">
-          <Image width={800} src={Kanan} alt={"wasd"} />
-        </div>
       </div>
-
-      <div className="p-10 flex flex-col md:flex-row justify-evenly">
-        <div>
-          <Image width={800} src={Kiri1} alt={"wasd"} />
+      <div
+        id="info"
+        className="p-10 flex items-center flex-col md:flex-row md:justify-evenly"
+      >
+        <div className=" md:mb-0 md:mr-8 ">
+          <Image className="w-80 pr-10 md:w-96 " src={Kiri1} alt={"wasd"} />
         </div>
-        <div className="flex flex-col space-y-5">
+        <div className="text-center flex flex-col space-y-5">
           <div className="text-3xl font-bold">
             Book the Cheap Flight Tickets to Your Favorite Destinations
           </div>
