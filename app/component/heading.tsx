@@ -76,6 +76,26 @@ const components: { title: string; href: string; description: string }[] = [
 ];
 
 const Heading: React.FC = () => {
+  const handleScrollToAbout = (event: any) => {
+    event.preventDefault();
+
+    // Scroll to the 'info' section
+    const infoSection = document.getElementById("about");
+
+    if (infoSection) {
+      infoSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  const handleScrollToServices = (event: any) => {
+    event.preventDefault();
+
+    // Scroll to the 'info' section
+    const infoSection = document.getElementById("services");
+
+    if (infoSection) {
+      infoSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   const handleScrollToInfo = (event: any) => {
     event.preventDefault();
 
@@ -108,70 +128,24 @@ const Heading: React.FC = () => {
               <NavigationMenu>
                 <NavigationMenuList>
                   <NavigationMenuItem>
-                    <NavigationMenuTrigger>Benefits</NavigationMenuTrigger>
-                    <NavigationMenuContent>
-                      <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-                        <li className="row-span-3">
-                          <NavigationMenuLink asChild>
-                            <a
-                              className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                              href="/"
-                            >
-                              {/* <Icons.logo className="h-6 w-6" /> */}
-                              <div className="mb-2 mt-4 text-lg font-medium">
-                                Unwind with Our Exclusive Holiday Benefits
-                              </div>
-                              <p className="text-sm leading-tight text-muted-foreground">
-                                Embark on a journey of relaxation and joy with
-                                our unparalleled holiday benefits designed
-                                exclusively for you.
-                              </p>
-                            </a>
-                          </NavigationMenuLink>
-                        </li>
-                        <ListItem
-                          href="/docs"
-                          title="Tailored Vacation Packages"
-                        >
-                          Enjoy the flexibility of choosing from a variety of
-                          tailored vacation packages, each crafted to cater to
-                          different preferences and travel styles.
-                        </ListItem>
-                        <ListItem
-                          href="/docs/installation"
-                          title="Exclusive Discounts and Offers"
-                        >
-                          As a valued member of our holiday community,
-                          you&apos;ll have access to exclusive discounts and
-                          special offers on accommodations, flights, and various
-                          activities.
-                        </ListItem>
-                        <ListItem
-                          href="/docs/primitives/typography"
-                          title="Personalized Travel Assistance"
-                        >
-                          Our dedicated team of travel experts is committed to
-                          providing you with personalized assistance throughout
-                          your journey.
-                        </ListItem>
-                      </ul>
-                    </NavigationMenuContent>
+                    <Link href="#service" legacyBehavior passHref>
+                      <NavigationMenuLink
+                        className={navigationMenuTriggerStyle()}
+                        onClick={handleScrollToServices}
+                      >
+                        Services
+                      </NavigationMenuLink>
+                    </Link>
                   </NavigationMenuItem>
                   <NavigationMenuItem>
-                    <NavigationMenuTrigger>About</NavigationMenuTrigger>
-                    <NavigationMenuContent>
-                      <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-                        {components.map((component) => (
-                          <ListItem
-                            key={component.title}
-                            title={component.title}
-                            href={component.href}
-                          >
-                            {component.description}
-                          </ListItem>
-                        ))}
-                      </ul>
-                    </NavigationMenuContent>
+                    <Link href="#info" legacyBehavior passHref>
+                      <NavigationMenuLink
+                        className={navigationMenuTriggerStyle()}
+                        onClick={handleScrollToAbout}
+                      >
+                        About
+                      </NavigationMenuLink>
+                    </Link>
                   </NavigationMenuItem>
                   <NavigationMenuItem>
                     <Link href="/About" legacyBehavior passHref>
