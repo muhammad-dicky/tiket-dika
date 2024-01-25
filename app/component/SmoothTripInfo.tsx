@@ -10,7 +10,7 @@ export default function SmoothTripInfo() {
       <div className="md:hidden">
         <div
           id="info"
-          className="p-10 flex items-center flex-col md:flex-row md:justify-evenly"
+          className="pb-10 flex items-center flex-col md:flex-row md:justify-evenly"
         >
           <div className=" md:mb-0 md:mr-8 ">
             <Image className="w-80 pr-10 md:w-96 " src={Kiri} alt={"wasd"} />
@@ -95,7 +95,7 @@ export default function SmoothTripInfo() {
       <div className="md:block hidden">
         <div
           id="info"
-          className="p-10 flex items-center flex-col md:flex-row md:justify-evenly"
+          className="px-10 flex items-center flex-col md:flex-row md:justify-evenly"
         >
           <div className=" md:mb-0 md:mr-8 flex-1">
             <Image className="w-80 pr-10 md:w-auto " src={Kiri} alt={"wasd"} />
@@ -125,7 +125,7 @@ export default function SmoothTripInfo() {
         <div>
           <div
             id="info"
-            className="p-10  flex items-center flex-col md:flex-row md:justify-evenly"
+            className="px-10  flex items-center flex-col md:flex-row md:justify-evenly"
           >
             <div className="flex flex-col space-y-5 text-right flex-1">
               <div className="text-3xl font-bold">
@@ -159,7 +159,7 @@ export default function SmoothTripInfo() {
         </div>
         <div
           id="info"
-          className="p-10 flex items-center flex-col md:flex-row md:justify-evenly"
+          className="px-10 flex items-center flex-col md:flex-row md:justify-evenly"
         >
           <div className="flex-1 md:mb-0 md:mr-8 ">
             <Image className="w-80 pr-10 md:w-auto " src={Kiri1} alt={"wasd"} />

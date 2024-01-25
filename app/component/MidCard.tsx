@@ -8,7 +8,8 @@ import { CreditCard, Map, SearchCheck, Ticket } from "lucide-react";
 const { Title, Text } = Typography;
 
 const imageCarousel = {
-  borderRadius: 15,
+  borderRadius: 120,
+  padding: 100,
 };
 
 const cardStyle = {

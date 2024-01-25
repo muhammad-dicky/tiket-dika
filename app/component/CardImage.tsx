@@ -15,7 +15,23 @@ const { Title, Text } = Typography;
 export const CardImageTitle = () => {
   return (
     <>
-      <div className="py-20 flex-row md:flex space-y-5 justify-between text-center md:text-left mx-40">
+      {/* <div className="py-20 flex-row md:flex space-y-5 justify-between text-center md:text-left mx-40">
+        <div className="flex-1">
+          <p className="text-3xl ">Best location</p>
+          <h1 className="text-4xl font-bold dark:text-white">
+            Indonesian tourism
+          </h1>
+        </div>
+        <div className="flex-1">
+          <h1 style={{ fontSize: "24px" }}>
+            {" "}
+            Extraordinary natural beauty, enjoy the rich culture, and experience
+            the friendliness of the local people.
+          </h1>
+        </div>
+      </div>
+    </> */}
+      <div className="py-20 flex-row md:flex  justify-between text-center md:text-left mx-96">
         <div className="flex-1">
           <p className="text-3xl ">Best location</p>
           <h1 className="text-4xl font-bold dark:text-white">
